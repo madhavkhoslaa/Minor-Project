@@ -1,10 +1,10 @@
 const express = require('express')
 const Coordinates = require('./routes/query')
-
+const home = require('./routes/home')
 const app = express()
 app.use(express.json())
 app.use(Coordinates)
-
+app.use(home)
 app.listen(process.env.PORT || 3000, () => {
-    
+    console.log(`${process.env.PORT || 3000} running`)
 })
