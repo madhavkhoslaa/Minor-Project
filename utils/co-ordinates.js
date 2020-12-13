@@ -39,27 +39,4 @@ const fetch = (coordinates, xy, latlong) => {
     return pair
 }
 
-var coordinates = [
-    [
-      -72.283119,
-      42.92402
-    ],
-    [
-      -72.2836071,
-      42.923694
-    ],
-    [
-      -72.2834837,
-      42.9232108
-    ],
-    [
-      -72.2826844,
-      42.9231833
-    ],
-    [
-      -72.2824216,
-      42.9236704
-    ]
-  ]
-
-console.log(bounds(coordinates))
+module.exports = {bounds, fetch}
