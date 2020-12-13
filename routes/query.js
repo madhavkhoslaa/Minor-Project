@@ -4,7 +4,7 @@ const generation = require("../utils/generation")
 
 const query = express.Router()
 
-query.get(('/pointsdedo/'), (req, res) => {
+query.post(('/pointsdedo/'), (req, res) => {
     const bounds = cood.bounds(req.body.cood)
     var bounds_ = []
     bounds.forEach((latlong) => {
